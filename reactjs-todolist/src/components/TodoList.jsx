@@ -1,5 +1,6 @@
 import React from 'react'
 import TodoCard from './todoCard'
+import { PiRowsPlusBottomFill } from 'react-icons/pi'
 
 const todoList = (props) => {
   const {todo} = props
@@ -9,7 +10,7 @@ const todoList = (props) => {
       <ul className='main'>
       {todo.map((todo,todoIndex) => {
         return (
-         <TodoCard key="todoIndex">
+         <TodoCard {...props} key="todoIndex" index={todoIndex}>
           <p>{todo}</p>
          </TodoCard>
         )

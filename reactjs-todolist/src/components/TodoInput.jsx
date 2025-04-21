@@ -16,6 +16,7 @@ const todoInput = (props) => {
           className="border-1 border-gray-400 p-2 rounded-md text-gray-600 shadow-sm transition-all duration-300 hover:text-black hover:border-black  hover:bg-white hover:shadow-md hover:shadow-purple-300"
           onClick={() => {
             handleAddTodo(todoValue)
+            setTodoValue('')
           }}>Add</button>
     </div>
   )
